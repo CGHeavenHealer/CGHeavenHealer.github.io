@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "CG_heavenhealer • All posts by \"introduction\" tag",
+    "description": "",
+    "home_page_url": "https://cgheavenhealer.github.io",
+    "items": [
+        {
+            "id": "https://cgheavenhealer.github.io/2021/08/05/Hello/",
+            "url": "https://cgheavenhealer.github.io/2021/08/05/Hello/",
+            "title": "Brief Introduction",
+            "date_published": "2021-08-05T11:53:59.000Z",
+            "content_html": "<h1 id=\"welcome\"><a class=\"markdownIt-Anchor\" href=\"#welcome\">#</a> Welcome!</h1>\n<p>It has been completed on Aug 5th, 2021.</p>\n<h1 id=\"about-me\"><a class=\"markdownIt-Anchor\" href=\"#about-me\">#</a> About Me:</h1>\n<p>CG__HeavenHealer : A He OIer.</p>\n<p>Studying from SJZEZ_south.</p>\n<p>updated at 2021.08.05.</p>\n",
+            "tags": [
+                "Introduction"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://cgheavenhealer.github.io</id>
+    <title>CG_heavenhealer • Posts by &#34;introduction&#34; tag</title>
+    <link href="https://cgheavenhealer.github.io" />
+    <updated>2021-08-05T11:53:59.000Z</updated>
+    <category term="图论" />
+    <category term="Introduction" />
+    <category term="字符串" />
+    <category term="数据结构" />
+    <category term="数学" />
+    <category term="DP" />
+    <entry>
+        <id>https://cgheavenhealer.github.io/2021/08/05/Hello/</id>
+        <title>Brief Introduction</title>
+        <link rel="alternate" href="https://cgheavenhealer.github.io/2021/08/05/Hello/"/>
+        <content type="html">&lt;h1 id=&#34;welcome&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#welcome&#34;&gt;#&lt;/a&gt; Welcome!&lt;/h1&gt;
+&lt;p&gt;It has been completed on Aug 5th, 2021.&lt;/p&gt;
+&lt;h1 id=&#34;about-me&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#about-me&#34;&gt;#&lt;/a&gt; About Me:&lt;/h1&gt;
+&lt;p&gt;CG__HeavenHealer : A He OIer.&lt;/p&gt;
+&lt;p&gt;Studying from SJZEZ_south.&lt;/p&gt;
+&lt;p&gt;updated at 2021.08.05.&lt;/p&gt;
+</content>
+        <category term="Introduction" />
+        <updated>2021-08-05T11:53:59.000Z</updated>
+    </entry>
+</feed>

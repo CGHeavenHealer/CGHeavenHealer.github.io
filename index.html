@@ -65,7 +65,7 @@
         <nav id="nav">
   <div class="inner">
     <div class="toggle">
-      <div class="lines" aria-label="ナビゲーションバーの切り替え">
+      <div class="lines" aria-label="Toggle navigation bar">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -88,12 +88,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
           <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
         </ul>
       </div>
     </header>
@@ -115,34 +115,316 @@
         <div id="main" class="pjax">
           
   <div class="index wrap">
-    <h2 class="divider">記事のリスト</h2>
+    <h2 class="divider">Post List</h2>
     <div class="segments posts">
         
 <article class="item">
   <div class="cover">
-    <a href="/2021/08/07/hello-world/" itemprop="url" title="Hello World"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></a>
+    <a href="/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/" itemprop="url" title="最短路径树"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></a>
   </div>
   <div class="info">
     
 <div class="meta">
-  <span class="item" title="作成日：2021-08-07 22:03:20">
+  <span class="item" title="Created: 2021-08-05 20:23:29">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
-    <time itemprop="dateCreated datePublished" datetime="2021-08-07T22:03:20+08:00">2021-08-07</time>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T20:23:29+08:00">2021-08-05</time>
   </span>
 </div>
 
-    <h3><a href="/2021/08/07/hello-world/" itemprop="url" title="Hello World">Hello World</a></h3>
+    <h3><a href="/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/" itemprop="url" title="最短路径树">最短路径树</a></h3>
     <div class="excerpt">
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-# Quick Start
-# Create a new post
-h$ hexo new &quot;My New Post&quot;More info: Writing
-# Run server
-h$...
+        # 简介
+最短路径树，顾名思义，就是由最短路的边构成的生成树。
+最短路没有不会求的吧
+严格定义：对于一个无向连通图，一个以顶点 vvv 构成的最短路树满足以下条件：
+
+在这棵树中，从顶点 vvv 到任意顶点 uuu 的路径距离，是图中 vvv 到 uuu 的最短路。
+全图联通，且有 n−1n-1n−1 条边 （毕竟人家是生成树）
+
+SPT 与最小生成树的区别在于，最小生成树不需要满足第一个条件，只要保证全图连通就可以了。
+通常情况下，SPT 的边权和 $\ge $ 最小生成树的边权和
+SPT 的实现方式主要有 Dijkstra 和 Floyd 两种，但碍于图论题...
     </div>
-    <a href="/2021/08/07/hello-world/" itemprop="url" title="Hello World" class="btn">more...</a>
+    <a href="/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/" itemprop="url" title="最短路径树" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2021/08/05/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/" itemprop="url" title="组合计数"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-08-05 20:23:02">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T20:23:02+08:00">2021-08-05</time>
+  </span>
+</div>
+
+    <h3><a href="/2021/08/05/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/" itemprop="url" title="组合计数">组合计数</a></h3>
+    <div class="excerpt">
+        # 基本原理
+加法原理：做一件事，方法有 nnn 类，其中第 iii 类方法有 mim_imi​ 种实现方式，则完成这件事的方法有 ∑i=1nmi\sum_{i=1}^n m_i∑i=1n​mi​ 种。
+乘法原理：做一件事，步骤有 nnn 个，其中第 iii 个步骤有 mim_imi​ 种实现方式，则完成这件事的方法有 ∏i=1nmi\prod_{i=1}^n m_i∏i=1n​mi​ 种。
+减法原理：合法方案 = 总方案 - 非法方案（补集思想）
+
+# 常用公式
+排列数： P_n^m = \dfrac {n!}
+圆排列：（首尾相接）...
+    </div>
+    <a href="/2021/08/05/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/" itemprop="url" title="组合计数" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2021/08/05/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93/" itemprop="url" title="字符串总结"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclhnx9glj20zk0m8npd.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-08-05 20:21:02">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T20:21:02+08:00">2021-08-05</time>
+  </span>
+</div>
+
+    <h3><a href="/2021/08/05/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93/" itemprop="url" title="字符串总结">字符串总结</a></h3>
+    <div class="excerpt">
+        # 哈希
+对于一个长度为 nnn 的字符串，哈希值为 ∑i=1nSi×basen−imod  p\sum_{i=1}^nS_i\times base^{n-i}\mod p∑i=1n​Si​×basen−imodp，其中 basebasebase 为进制，自选（一般为大于 128128128 的质数）
+不计冲突的情况下，可以直接比较两个字符串的哈希值判断其是否相等
+为减小冲突概率，可以采用双模数以及自然溢出的方法
+# KMP
+核心思想：最大限度记录上一次匹配的信息，避免每次都从头匹配。
+假如我们匹配的源串匹配到了 iii ，模式串匹配到了 jjj ，每一次匹配到失配的字符时，我们不让 jjj...
+    </div>
+    <a href="/2021/08/05/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93/" itemprop="url" title="字符串总结" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2021/08/05/%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/" itemprop="url" title="斜率优化"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-08-05 20:19:50">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T20:19:50+08:00">2021-08-05</time>
+  </span>
+</div>
+
+    <h3><a href="/2021/08/05/%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/" itemprop="url" title="斜率优化">斜率优化</a></h3>
+    <div class="excerpt">
+        # 简介
+斜率优化，是一种 DP 优化手段。
+对于一个形如 f[i]=val(i,j)+f[j]f[i]=val(i,j)+f[j]f[i]=val(i,j)+f[j] 的转移方程，如果 val(i,j)val(i,j)val(i,j) 只和 i,ji,ji,j 中的一个有关，那么可以简单地用单调队列优化；而如果 val(i,j)val(i,j)val(i,j) 与 i,ji,ji,j 两项都有关，时限又要求我们优化复杂度时，就要用斜率优化了。
+# 例：特别行动队
+初始战力：$$ x_i $$
+修正战力：$$ F (x) = Ax_i^2+Bx_i+C $$ ，令其最大化
+设...
+    </div>
+    <a href="/2021/08/05/%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/" itemprop="url" title="斜率优化" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2021/08/05/%E5%9B%BE%E8%AE%BA%E6%9D%82%E9%A1%B9/" itemprop="url" title="图论杂项"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-08-05 20:19:16">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T20:19:16+08:00">2021-08-05</time>
+  </span>
+</div>
+
+    <h3><a href="/2021/08/05/%E5%9B%BE%E8%AE%BA%E6%9D%82%E9%A1%B9/" itemprop="url" title="图论杂项">图论杂项</a></h3>
+    <div class="excerpt">
+        # 无向图 Tarjan
+割点、割边：删去后能令图中的连通分量增加的点（边）
+边在搜索树上：lowu=min(lowu,lowv)low_u=min(low_u,low_v)lowu​=min(lowu​,lowv​)
+边不在搜索树上：lowu=min(lowu,dfnv)low_u=min(low_u,dfn_v)lowu​=min(lowu​,dfnv​)
+判断割点：lowv≥dfnulow_v \ge dfn_ulowv​≥dfnu​
+判断割边：lowv&amp;gt;dfnulow_v &amp;gt;...
+    </div>
+    <a href="/2021/08/05/%E5%9B%BE%E8%AE%BA%E6%9D%82%E9%A1%B9/" itemprop="url" title="图论杂项" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2021/08/05/%E6%95%B0%E5%AD%A6%E5%B0%8F%E7%BB%93/" itemprop="url" title="数学小结"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-08-05 20:18:39">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T20:18:39+08:00">2021-08-05</time>
+  </span>
+</div>
+
+    <h3><a href="/2021/08/05/%E6%95%B0%E5%AD%A6%E5%B0%8F%E7%BB%93/" itemprop="url" title="数学小结">数学小结</a></h3>
+    <div class="excerpt">
+        # 康托展开
+广义康托展开：变进制数下的进制变换
+康托展开：将任意十进制数转换为阶乘进制数
+逆康托展开：将任意阶乘进制数转换为十进制数
+构造双射变换： P→S!:xi=ranksuf(pi)P \to S! : x_i = rank_{suf}(p_i)P→S!:xi​=ranksuf​(pi​)
+构造方法：从给定的排列的最高位开始扫，统计一下比这一位数小、且没使用过的数的个数，并把这个数标记为已使用（因为求的是排列，数与数之间不能重合），然后乘上该位的阶乘。
+如果数字过多，可以用树状数组维护一下数字有没有使用过。
+核心代码：
+for (ri i = 1; i &amp;lt;= n;...
+    </div>
+    <a href="/2021/08/05/%E6%95%B0%E5%AD%A6%E5%B0%8F%E7%BB%93/" itemprop="url" title="数学小结" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2021/08/05/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" itemprop="url" title="树链剖分"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-08-05 20:16:47">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T20:16:47+08:00">2021-08-05</time>
+  </span>
+</div>
+
+    <h3><a href="/2021/08/05/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" itemprop="url" title="树链剖分">树链剖分</a></h3>
+    <div class="excerpt">
+        # 简介
+树链剖分用于将整棵树剖分为若干条链，使它组合成线性结构，然后用其他的数据结构维护信息。
+树链剖分可以将树上的任意一条路径划分成不超过 $ log_2n $ 条连续的链，每条链上的点深度互不相同。
+
+定义以下内容：
+重子节点 表示其子节点中子树最大的子结点。
+轻子节点 表示剩余的所有子结点。
+从这个结点到重子节点的边为 重边。
+到其他轻子节点的边为 轻边。
+若干条首尾衔接的重边构成 重链。
+把落单的结点也当作重链，那么整棵树就被剖分成若干条重链。
+
+# 实现
+树链剖分为将树组合成线性结构，需要通过两次DFSDFSDFS 维护以下信息：
+1.$ fa_x $...
+    </div>
+    <a href="/2021/08/05/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" itemprop="url" title="树链剖分" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2021/08/05/%E5%B9%B3%E8%A1%A1%E6%A0%91/" itemprop="url" title="平衡树"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclwrdwyaj20zk0m8are.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-08-05 20:15:34">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T20:15:34+08:00">2021-08-05</time>
+  </span>
+</div>
+
+    <h3><a href="/2021/08/05/%E5%B9%B3%E8%A1%A1%E6%A0%91/" itemprop="url" title="平衡树">平衡树</a></h3>
+    <div class="excerpt">
+        # 简介
+平衡树是一种二叉搜索树（BSTBSTBST）。
+~~ 众所周知，~~ 二叉树上的操作与树高是成正比的。随机构成一棵BSTBSTBST 的期望树高是 $ log_{2} n $，但是最坏的情况树高会达到 $ n $。为了防止在二叉搜索树上的操作复杂度退化，平衡树便应运而生。
+平衡树有很多种，像AVL，Treap，Splay，SBT，AVL，Treap，Splay，SBT，AVL，Treap，Splay，SBT，红黑树，包括STLSTLSTL 里的setsetset 和multisetmultisetmultiset...
+    </div>
+    <a href="/2021/08/05/%E5%B9%B3%E8%A1%A1%E6%A0%91/" itemprop="url" title="平衡树" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2021/08/05/%E8%8E%AB%E9%98%9F/" itemprop="url" title="莫队"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1giclxfdlttj20zk0m8npd.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-08-05 20:14:26">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T20:14:26+08:00">2021-08-05</time>
+  </span>
+</div>
+
+    <h3><a href="/2021/08/05/%E8%8E%AB%E9%98%9F/" itemprop="url" title="莫队">莫队</a></h3>
+    <div class="excerpt">
+        # 简介
+莫队是一种优雅的暴力分块算法，由于其为国家队队长莫涛发明，故称为莫队。
+与其他的分块不同，莫队不是讲序列分块，而是将询问按端点排序后分块，朴素的解决完第一个询问后，左右端点分别向下一个询问移动（把多出来的删掉，不够的加上去）。
+# 题目：
+# 1：P2709 小 B 的询问
+有一个nnn 个元素，值域为[1,k][1,k][1,k] 的序列，求 $ \sum_i=1}【{k】 c_i^2 （其中（其中（其中 c_i表示表示表示 i在在在 [l,r]$ 中出现的次数。
+
+# 记录 &amp;amp;&amp;amp;...
+    </div>
+    <a href="/2021/08/05/%E8%8E%AB%E9%98%9F/" itemprop="url" title="莫队" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2021/08/05/Hello/" itemprop="url" title="Brief Introduction"><img data-src="https://tva4.sinaimg.cn/mw690/6833939bly1gicit4jrvuj20zk0m8785.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-08-05 19:53:59">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T19:53:59+08:00">2021-08-05</time>
+  </span>
+</div>
+
+    <h3><a href="/2021/08/05/Hello/" itemprop="url" title="Brief Introduction">Brief Introduction</a></h3>
+    <div class="excerpt">
+        # Welcome!
+It has been completed on Aug 5th, 2021.
+# About Me:
+CG__HeavenHealer : A He OIer.
+Studying from SJZEZ_south.
+updated at 2021.08.05.
+    </div>
+    <a href="/2021/08/05/Hello/" itemprop="url" title="Brief Introduction" class="btn">more...</a>
   </div>
 </article>
 
@@ -161,11 +443,11 @@ h$...
 
   <div class="panels">
     <div class="inner">
-      <div class="contents panel pjax" data-title="見出し">
+      <div class="contents panel pjax" data-title="Contents">
       </div>
-      <div class="related panel pjax" data-title="関連記事">
+      <div class="related panel pjax" data-title="Related">
       </div>
-      <div class="overview panel" data-title="概要">
+      <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="CG_heavenhealer"
       data-src="/images/avatar.jpg">
@@ -176,8 +458,14 @@ h$...
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">1</span>
-        <span class="name">ポスト</span>
+        <span class="count">10</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">6</span>
+        <span class="name">tags</span>
       </a>
     </div>
 </nav>
@@ -195,7 +483,7 @@ h$...
   
     
   <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>ホーム</a>
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
 
@@ -225,7 +513,7 @@ h$...
         <div class="widgets">
           
 <div class="rpost pjax">
-  <h2>ランダムな記事</h2>
+  <h2>Random Posts</h2>
   <ul>
       
   <li class="item">
@@ -233,13 +521,94 @@ h$...
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2021/08/07/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2021/08/05/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/" title="组合计数">组合计数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/" title="最短路径树">最短路径树</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" title="树链剖分">树链剖分</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E5%9B%BE%E8%AE%BA%E6%9D%82%E9%A1%B9/" title="图论杂项">图论杂项</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/" title="斜率优化">斜率优化</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E5%B9%B3%E8%A1%A1%E6%A0%91/" title="平衡树">平衡树</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E6%95%B0%E5%AD%A6%E5%B0%8F%E7%BB%93/" title="数学小结">数学小结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93/" title="字符串总结">字符串总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/Hello/" title="Brief Introduction">Brief Introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E8%8E%AB%E9%98%9F/" title="莫队">莫队</a></span>
   </li>
 
   </ul>
 </div>
 <div>
-  <h2>最近のコメント</h2>
+  <h2>Recent Comments</h2>
   <ul class="leancloud-recent-comment"></ul>
 </div>
 
@@ -266,15 +635,15 @@ h$...
   var LOCAL = {
     path: '',
     favicon: {
-      show: "（●´3｀●）やれやれだぜ",
-      hide: "(´Д｀)大変だ！"
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
     },
     search : {
-      placeholder: "検索…",
-      empty: "「 ${query} 」については何も見つかりませんでした",
-      stats: "${time} ms以内に ${hits} 件の結果が見つかりました"
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
     },
-    valine: true,fancybox: true,copyright: 'コピーは成功しました。 <br> 再印刷については、 ％s 契約に従ってください。',
+    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
     ignores : [
       function(uri) {
         return uri.includes('#');

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>CG_heavenhealer • Posts by &#34;introduction&#34; tag</title>
+        <link>https://cgheavenhealer.github.io</link>
+        <description></description>
+        <language>zh-cn</language>
+        <pubDate>Thu, 05 Aug 2021 19:53:59 +0800</pubDate>
+        <lastBuildDate>Thu, 05 Aug 2021 19:53:59 +0800</lastBuildDate>
+        <category>图论</category>
+        <category>Introduction</category>
+        <category>字符串</category>
+        <category>数据结构</category>
+        <category>数学</category>
+        <category>DP</category>
+        <item>
+            <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/05/Hello/</guid>
+            <title>Brief Introduction</title>
+            <link>https://cgheavenhealer.github.io/2021/08/05/Hello/</link>
+            <category>Introduction</category>
+            <pubDate>Thu, 05 Aug 2021 19:53:59 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;welcome&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#welcome&#34;&gt;#&lt;/a&gt; Welcome!&lt;/h1&gt;
+&lt;p&gt;It has been completed on Aug 5th, 2021.&lt;/p&gt;
+&lt;h1 id=&#34;about-me&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#about-me&#34;&gt;#&lt;/a&gt; About Me:&lt;/h1&gt;
+&lt;p&gt;CG__HeavenHealer : A He OIer.&lt;/p&gt;
+&lt;p&gt;Studying from SJZEZ_south.&lt;/p&gt;
+&lt;p&gt;updated at 2021.08.05.&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

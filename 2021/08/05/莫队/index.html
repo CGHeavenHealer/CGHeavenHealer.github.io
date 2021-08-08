@@ -1,0 +1,676 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="CG_heavenhealer" href="https://cgheavenhealer.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="CG_heavenhealer" href="https://cgheavenhealer.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="CG_heavenhealer" href="https://cgheavenhealer.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="数据结构" />
+
+
+<link rel="canonical" href="https://cgheavenhealer.github.io/2021/08/05/%E8%8E%AB%E9%98%9F/">
+
+
+
+  <title>
+莫队 |
+Yume Shoka = CG_heavenhealer</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">莫队
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2021-08-05 20:14:26">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-08-05T20:14:26+08:00">2021-08-05</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-cn">
+  <link itemprop="mainEntityOfPage" href="https://cgheavenhealer.github.io/2021/08/05/%E8%8E%AB%E9%98%9F/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="CG_heavenhealer">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="CG_heavenhealer">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h2 id="简介"><a class="markdownIt-Anchor" href="#简介">#</a> 简介</h2>
+<p>莫队是一种<s>优雅的暴力</s>分块算法，由于其为国家队队长莫涛发明，故称为莫队。</p>
+<p>与其他的分块不同，莫队不是讲序列分块，而是将询问按端点排序后分块，朴素的解决完第一个询问后，左右端点分别向下一个询问移动（把多出来的删掉，不够的加上去）。</p>
+<h2 id="题目"><a class="markdownIt-Anchor" href="#题目">#</a> 题目：</h2>
+<h3 id="1p2709-小b的询问"><a class="markdownIt-Anchor" href="#1p2709-小b的询问">#</a> 1：P2709 小 B 的询问</h3>
+<p>有一个<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> 个元素，值域为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mn>1</mn><mo separator="true">,</mo><mi>k</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[1,k]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">]</span></span></span></span> 的序列，求 $ \sum_<ruby>i=1}<rp>【</rp><rt>{k</rt><rp>】</rp></ruby> c_i^2 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>（其中</mtext></mrow><annotation encoding="application/x-tex">（其中</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">（</span><span class="mord cjk_fallback">其</span><span class="mord cjk_fallback">中</span></span></span></span> c_i<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>表示</mtext></mrow><annotation encoding="application/x-tex">表示</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">表</span><span class="mord cjk_fallback">示</span></span></span></span> i<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>在</mtext></mrow><annotation encoding="application/x-tex">在</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord cjk_fallback">在</span></span></span></span> [l,r]$ 中出现的次数。</p>
+<hr>
+<h4 id="记录排序"><a class="markdownIt-Anchor" href="#记录排序">#</a> 记录 &amp;&amp; 排序</h4>
+<p>在结构体中记录左右端点、下标以及在分好块中的序列中的位置；</p>
+<p>排序：块下标第一优先，区间左 / 右端点第二优先</p>
+<pre><code class="language-c++">struct node &#123;
+    int l, r, id, pos;
+&#125; a[N];
+bool cmp(node a, node b) &#123; return a.pos == b.pos ? a.r &lt; b.r : a.pos &lt; b.pos; &#125;
+// 输入
+t = sqrt(n);
+for (int i = 1; i &lt;= m; i++) &#123;
+        a[i].l = read(), a[i].r = read();
+        a[i].id = i;
+        a[i].pos = (a[i].l - 1) * t + 1;
+&#125;
+</code></pre>
+<hr>
+<h4 id="添加删除"><a class="markdownIt-Anchor" href="#添加删除">#</a> 添加 &amp;&amp; 删除</h4>
+<p>添加时：左端点左移，右端点右移；</p>
+<p>删除时：左端点右移，右端点左移；</p>
+<pre><code class="language-c++">inline void add(int x) &#123;
+    cnt[s[x]]++;
+    res += 2 * cnt[s[x]] - 1;
+&#125;
+inline void del(int x) &#123;
+    cnt[s[x]]--;
+    res -= 2 * cnt[s[x]] + 1;
+&#125;
+while (l &gt; a[i].l) l--, add(l);
+while (r &lt; a[i].r) r++, add(r);
+while (l &lt; a[i].l) del(l), l++;
+while (r &gt; a[i].r) del(r), r--;
+</code></pre>
+<hr>
+<h5 id="colorlightgreen-code"><a class="markdownIt-Anchor" href="#colorlightgreen-code">#</a> $ \color{lightgreen} Code: $</h5>
+<pre><code class="language-c++">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+#define int long long
+#define ri register int
+const int N = 5e4 + 10;
+inline int read() &#123;
+    int x = 0;
+    char ch = getchar();
+    bool f = 1;
+    while (!isdigit(ch)) &#123;
+        if (ch == '-') f = 0;
+        ch = getchar();
+    &#125;
+    while (isdigit(ch)) &#123;
+        x = (x &lt;&lt; 1) + (x &lt;&lt; 3) + (ch ^ 48);
+        ch = getchar();
+    &#125;
+    return f ? x : -x;
+&#125;
+struct node &#123;
+    int l, r, id, pos;
+&#125; a[N];
+int s[N], cnt[N], ans[N], res;
+bool cmp(node a, node b) &#123; return a.pos == b.pos ? a.r &lt; b.r : a.pos &lt; b.pos; &#125;
+inline void add(int x) &#123;
+    cnt[s[x]]++;
+    res += 2 * cnt[s[x]] - 1;
+&#125;
+inline void del(int x) &#123;
+    cnt[s[x]]--;
+    res -= 2 * cnt[s[x]] + 1;
+&#125;
+signed main() &#123;
+    int n = read(), m = read(), k = read();
+    for (int i = 1; i &lt;= n; i++) s[i] = read();
+    int t = sqrt(n);
+    for (int i = 1; i &lt;= m; i++) &#123;
+        a[i].l = read(), a[i].r = read();
+        a[i].id = i;
+        a[i].pos = (a[i].l - 1) * t + 1;
+    &#125;
+    sort(a + 1, a + m + 1, cmp);
+    int l = 1, r = 0;
+    for (int i = 1; i &lt;= m; i++) &#123;
+        while (l &gt; a[i].l) l--, add(l);
+        while (r &lt; a[i].r) r++, add(r);
+        while (l &lt; a[i].l) del(l), l++;
+        while (r &gt; a[i].r) del(r), r--;
+        ans[a[i].id] = res;
+    &#125;
+    for (int i = 1; i &lt;= m; i++) printf(&quot;%lld\n&quot;, ans[i]);
+    return 0;
+&#125;
+</code></pre>
+<h3 id="2p1494-小z的袜子"><a class="markdownIt-Anchor" href="#2p1494-小z的袜子">#</a> 2：P1494 小 Z 的袜子</h3>
+<h4 id="记录排序添加删除"><a class="markdownIt-Anchor" href="#记录排序添加删除">#</a> 记录 &amp;&amp; 排序 &amp;&amp; 添加 &amp;&amp; 删除</h4>
+<p>同，略</p>
+<hr>
+<h4 id="答案"><a class="markdownIt-Anchor" href="#答案">#</a> 答案</h4>
+<p>题干中让我们求概率：</p>
+<p>我们设<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>n</mi><msub><mi>t</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">cnt_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord mathnormal">c</span><span class="mord mathnormal">n</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 表示 $ [l,r]  $ 内某种颜色的袜子出现的次数，则在区间 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[l,r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span> 中取出两个相同颜色的袜子情况有：</p>
+ C_{cnt_x}^2 = \dfrac {cnt_x * cnt_x-1}  2 $$;
+
+在区间 $[l,r]$ 中取出两个袜子情况共有：
+
+$$ C_{len}^2 = \dfrac {len*(len-1)}  2 ,(len = r - l + 1)$$；
+
+所以，概率为：
+$$ P = \dfrac {cnt_x*(cnt_x-1)}  {len * (len - 1)} = \dfrac {cnt_x*(cnt_x-1)}  {(r - l + 1)* (r - l)} = \dfrac {cnt _ x ^ 2 - cnt_x}  {(r - l + 1)* (r - l)}$$；
+
+即，抽到两个相同数字的概率为：
+
+$$ \sum_{i=1}^n \dfrac {cnt _ i ^ 2 - cnt_i}  {(r - l + 1)* (r - l)} = \dfrac {\sum_{i=1}^n cnt _ i ^ 2 - cnt_i}  {(r - l + 1)* (r - l)}$$；
+
+而对于区间$[l,r]$，有：
+
+$$ \sum_{i=1}^n cnt_i = r - l + 1 $$；
+
+则答案为：
+
+$$ ans=\dfrac{\sum_{i=1}^n cnt_i^2 - (r - l + 1)}{ (r - l + 1)*(r-l) }$$。
+
+---
+
+##### $ \color{lightgreen} Code: $
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+#define int long long
+#define ri register int
+const int N = 1e5 + 10;
+inline int read() {
+    ri x = 0, f = 1;
+    char ch = getchar();
+    for (; !isdigit(ch); ch = getchar()) 
+        if (ch == '-') f = -1;
+    for (; isdigit(ch); ch = getchar()) x = (x << 1) + (x << 3) + (ch ^ 48);
+    return f * x;
+}
+struct node {
+    int l, r, id;
+} mo[N];
+int L[N], R[N], ans[N], s[N], sum, a[N], lal = 1, lar, t;
+int gcd(int a, int b) {
+    return b ? (gcd(b, a % b)) : a;
+}
+bool cmp(node x, node y) {
+    if ((x.l - 1) / t == (y.l - 1) / t) return x.r < y.r;
+    return x.l / t < y.l / t;
+}
+inline void add(int x) {
+    sum -= s[x] * (s[x] - 1) / 2;
+    s[x]++;
+    sum += s[x] * (s[x] - 1) / 2;
+}
+inline void del(int x) {
+    sum -= s[x] * (s[x] - 1) / 2;
+    s[x]--;
+    sum += s[x] * (s[x] - 1) / 2;
+}
+signed main() {
+    int n = read(), m = read();
+    t = sqrt(n);
+    for (ri i = 1; i <= n; i++) a[i] = read();
+    for (ri i = 1; i <= m; i++) {
+        mo[i].l = read();
+        mo[i].r = read();
+        mo[i].id = i;
+        L[i] = mo[i].l;
+        R[i] = mo[i].r;
+    }
+    sort(mo + 1, mo + m + 1, cmp);
+    for (ri i = 1; i <= m; i++) {
+        int l = mo[i].l, r = mo[i].r;
+        while (lal > l) lal--, add(a[lal]);
+        while (lar < r) lar++, add(a[lar]);
+        while (lal < l) del(a[lal]), lal++;
+        while (lar > r) del(a[lar]), lar--;
+        ans[mo[i].id] = sum;
+    }
+    for (ri i = 1; i <= m; i++) {
+        int tmp = gcd(ans[i], (R[i] - L[i] + 1) * (R[i] - L[i]) / 2);
+        if (L[i] == R[i])
+            puts("0/1");
+        else
+            printf("%lld/%lld\n", ans[i] / tmp,
+                   (R[i] - L[i] + 1) * (R[i] - L[i]) / (2 * tmp));
+    }
+    return 0;
+}
+```
+
+# The End
+
+
+      <div class="tags">
+          <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"><i class="ic i-tag"></i> 数据结构</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2021-08-05 20:14:50" itemprop="dateModified" datetime="2021-08-05T20:14:50+08:00">2021-08-05</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="CG_heavenhealer WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="CG_heavenhealer Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="CG_heavenhealer PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>CG_heavenhealer <i class="ic i-at"><em>@</em></i>CG_heavenhealer
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="https://cgheavenhealer.github.io/2021/08/05/%E8%8E%AB%E9%98%9F/" title="莫队">https://cgheavenhealer.github.io/2021/08/05/莫队/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2021/08/05/Hello/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu7txpzj20zk0m81kx.jpg" title="Brief Introduction">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>Brief Introduction</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2021/08/05/%E5%B9%B3%E8%A1%A1%E6%A0%91/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph47e9vtj20zk0m8x6l.jpg" title="平衡树">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>平衡树</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text"> 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE"><span class="toc-number">2.</span> <span class="toc-text"> 题目：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1p2709-%E5%B0%8Fb%E7%9A%84%E8%AF%A2%E9%97%AE"><span class="toc-number">2.1.</span> <span class="toc-text"> 1：P2709 小 B 的询问</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E6%8E%92%E5%BA%8F"><span class="toc-number">2.1.1.</span> <span class="toc-text"> 记录 &amp;&amp; 排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%88%A0%E9%99%A4"><span class="toc-number">2.1.2.</span> <span class="toc-text"> 添加 &amp;&amp; 删除</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#colorlightgreen-code"><span class="toc-number">2.1.2.1.</span> <span class="toc-text"> $ \color{lightgreen} Code: $</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2p1494-%E5%B0%8Fz%E7%9A%84%E8%A2%9C%E5%AD%90"><span class="toc-number">2.2.</span> <span class="toc-text"> 2：P1494 小 Z 的袜子</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E6%8E%92%E5%BA%8F%E6%B7%BB%E5%8A%A0%E5%88%A0%E9%99%A4"><span class="toc-number">2.2.1.</span> <span class="toc-text"> 记录 &amp;&amp; 排序 &amp;&amp; 添加 &amp;&amp; 删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AD%94%E6%A1%88"><span class="toc-number">2.2.2.</span> <span class="toc-text"> 答案</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="CG_heavenhealer"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">CG_heavenhealer</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">10</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">6</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lvdXJuYW1l" title="https:&#x2F;&#x2F;github.com&#x2F;yourname"><i class="ic i-github"></i></span>
+      <span class="exturl item twitter" data-url="aHR0cHM6Ly90d2l0dGVyLmNvbS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;twitter.com&#x2F;yourname"><i class="ic i-twitter"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;yourname"><i class="ic i-zhihu"></i></span>
+      <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPXlvdXJpZA==" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;yourid"><i class="ic i-cloud-music"></i></span>
+      <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20veW91cm5hbWU=" title="https:&#x2F;&#x2F;weibo.com&#x2F;yourname"><i class="ic i-weibo"></i></span>
+      <span class="exturl item about" data-url="aHR0cHM6Ly9hYm91dC5tZS95b3VybmFtZQ==" title="https:&#x2F;&#x2F;about.me&#x2F;yourname"><i class="ic i-address-card"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2021/08/05/Hello/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2021/08/05/%E5%B9%B3%E8%A1%A1%E6%A0%91/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" title="树链剖分">树链剖分</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/Hello/" title="Brief Introduction">Brief Introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/" title="最短路径树">最短路径树</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93/" title="字符串总结">字符串总结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E6%95%B0%E5%AD%A6%E5%B0%8F%E7%BB%93/" title="数学小结">数学小结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/" title="组合计数">组合计数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E5%9B%BE%E8%AE%BA%E6%9D%82%E9%A1%B9/" title="图论杂项">图论杂项</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E8%8E%AB%E9%98%9F/" title="莫队">莫队</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E5%B9%B3%E8%A1%A1%E6%A0%91/" title="平衡树">平衡树</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2021/08/05/%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/" title="斜率优化">斜率优化</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2021</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">CG_heavenhealer @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2021/08/05/莫队/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
