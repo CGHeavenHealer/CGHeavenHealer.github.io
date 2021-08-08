@@ -5,14 +5,21 @@
         <link>https://cgheavenhealer.github.io</link>
         <description></description>
         <language>zh-cn</language>
-        <pubDate>Thu, 05 Aug 2021 20:23:29 +0800</pubDate>
-        <lastBuildDate>Thu, 05 Aug 2021 20:23:29 +0800</lastBuildDate>
+        <pubDate>Sun, 08 Aug 2021 08:39:32 +0800</pubDate>
+        <lastBuildDate>Sun, 08 Aug 2021 08:39:32 +0800</lastBuildDate>
         <category>图论</category>
         <category>Introduction</category>
         <category>字符串</category>
         <category>数据结构</category>
         <category>数学</category>
         <category>DP</category>
+        <item>
+            <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/08/about/</guid>
+            <title>about</title>
+            <link>https://cgheavenhealer.github.io/2021/08/08/about/</link>
+            <pubDate>Sun, 08 Aug 2021 08:39:32 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/</guid>
             <title>最短路径树</title>
