@@ -822,7 +822,13 @@ signed main() {
             <title>friends</title>
             <link>https://cgheavenhealer.github.io/2011/08/09/friends/</link>
             <pubDate>Tue, 09 Aug 2011 21:23:58 +0800</pubDate>
-            <description><![CDATA[ &lt;div class=&#34;links&#34;&gt;&lt;/div&gt; 
+            <description><![CDATA[ &lt;div class=&#34;links&#34;&gt;&lt;div class=&#34;item&#34; title=&#34;霜月琉璃&#34; style=&#34;--block-color:#e9546b;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWU=&#34; data-background-image=&#34;https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg&#34;&gt;&lt;/span&gt;
+          &lt;div class=&#34;info&#34;&gt;
+          &lt;span class=&#34;exturl title&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWU=&#34;&gt;優萌初華&lt;/span&gt;
+          &lt;p class=&#34;desc&#34;&gt;琉璃的医学 &amp; 编程笔记&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;&lt;/div&gt; 
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;;;;&lt;/p&gt;
  ]]></description>
         </item>
