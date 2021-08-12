@@ -9,6 +9,8 @@
     <category term="数据结构" />
     <category term="数学" />
     <category term="DP" />
+    <category term="数据结构,平衡树" />
+    <category term="数据结构,树链剖分" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/</id>
         <title>最短路径树</title>
