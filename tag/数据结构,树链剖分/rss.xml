@@ -95,6 +95,11 @@
 &lt;p&gt;到这里，树剖结束了吗？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;远远没有！&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;技巧-槽点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#技巧-槽点&#34;&gt;#&lt;/a&gt; 技巧 / 槽点&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;虽然树剖本尊很简单、很模板，但是有时他会稍微改动一下，比如边权转点权、线段树要动态开点等，具体见例题 1、2&lt;/li&gt;
+&lt;li&gt;有的时候维护的东西不好整体维护，像异或和，这时可以进行拆位，把整个数或者是什么东西变成一个好维护的东西，然后在分别统计贡献。具体见例题 3&lt;/li&gt;
+&lt;li&gt;线段树处理时一定要注意细节，像 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;tag&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.80952em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;t&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.03588em;&#34;&gt;g&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 的初值、标记下传的时机之类&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;例题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#例题&#34;&gt;#&lt;/a&gt; 例题&lt;/h2&gt;
 &lt;h3 id=&#34;1sdoi2014旅行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1sdoi2014旅行&#34;&gt;#&lt;/a&gt; 1.&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubHVvZ3UuY29tLmNuL3Byb2JsZW0vUDMzMTM=&#34;&gt;[SDOI2014] 旅行&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;就是简单的区间覆盖和区间查询，但是如果对每一个宗教都开一棵线段树会炸的很惨，所以需要用动态开点线段树节约空间。&lt;/p&gt;
