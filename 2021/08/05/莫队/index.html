@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  <meta name="keywords" content="数据结构" />
+  <meta name="keywords" content="数据结构,莫队" />
 
 
 <link rel="canonical" href="https://cgheavenhealer.github.io/2021/08/05/%E8%8E%AB%E9%98%9F/">
@@ -32,7 +32,7 @@
 
 
   <title>
-莫队 |
+莫队 - 学习笔记 |
 Fantastic Blog = CG_heavenhealer</title>
 <meta name="generator" content="Hexo 5.4.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -102,12 +102,12 @@ Fantastic Blog = CG_heavenhealer</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
         </ul>
       </div>
     </header>
@@ -132,7 +132,9 @@ Fantastic Blog = CG_heavenhealer</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/">首页</a></span>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="item" rel="index" title="分类于 学习笔记"><span itemprop="name">学习笔记</span></a>
+<meta itemprop="position" content="1" /></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
@@ -350,6 +352,7 @@ signed main() {
 
       <div class="tags">
           <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"><i class="ic i-tag"></i> 数据结构</a>
+          <a href="/tags/%E8%8E%AB%E9%98%9F/" rel="tag"><i class="ic i-tag"></i> 莫队</a>
       </div>
   </div>
 
@@ -361,7 +364,7 @@ signed main() {
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2021-08-10 22:02:15" itemprop="dateModified" datetime="2021-08-10T22:02:15+08:00">2021-08-10</time>
+    <time title="修改时间：2021-08-18 22:04:26" itemprop="dateModified" datetime="2021-08-18T22:04:26+08:00">2021-08-18</time>
   </span>
 </div>
 
@@ -393,7 +396,7 @@ signed main() {
     <div class="item left">
       
 
-  <a href="/2011/08/09/friends/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevarprfj20zk0m8npd.jpg" title="friends">
+  <a href="/2011/08/09/friends/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexw3o58j20zk0m8e81.jpg" title="friends">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>friends</h3>
@@ -403,10 +406,10 @@ signed main() {
     <div class="item right">
       
 
-  <a href="/2021/08/05/%E5%B9%B3%E8%A1%A1%E6%A0%91/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewf5l51j20zk0m8b29.jpg" title="平衡树">
+  <a href="/2021/08/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%B0%8F%E7%BB%93/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm07ih54j20zk0m84qp.jpg" title="数据结构小结">
   <span class="type">下一篇</span>
-  <span class="category"><i class="ic i-flag"></i> </span>
-  <h3>平衡树</h3>
+  <span class="category"><i class="ic i-flag"></i> 听课记录</span>
+  <h3>数据结构小结</h3>
   </a>
 
     </div>
@@ -428,6 +431,9 @@ signed main() {
           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text"> 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE"><span class="toc-number">2.</span> <span class="toc-text"> 题目：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1p2709-%E5%B0%8Fb%E7%9A%84%E8%AF%A2%E9%97%AE"><span class="toc-number">2.1.</span> <span class="toc-text"> 1：P2709 小 B 的询问</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E6%8E%92%E5%BA%8F"><span class="toc-number">2.1.1.</span> <span class="toc-text"> 记录 &amp;&amp; 排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E5%88%A0%E9%99%A4"><span class="toc-number">2.1.2.</span> <span class="toc-text"> 添加 &amp;&amp; 删除</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#colorlightgreen-code"><span class="toc-number">2.1.2.1.</span> <span class="toc-text"> $ \color{lightgreen} Code: $</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2p1494-%E5%B0%8Fz%E7%9A%84%E8%A2%9C%E5%AD%90"><span class="toc-number">2.2.</span> <span class="toc-text"> 2：P1494 小 Z 的袜子</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E6%8E%92%E5%BA%8F%E6%B7%BB%E5%8A%A0%E5%88%A0%E9%99%A4"><span class="toc-number">2.2.1.</span> <span class="toc-text"> 记录 &amp;&amp; 排序 &amp;&amp; 添加 &amp;&amp; 删除</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AD%94%E6%A1%88"><span class="toc-number">2.2.2.</span> <span class="toc-text"> 答案</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/2021/08/05/%E8%8E%AB%E9%98%9F/" rel="bookmark" title="莫队">莫队</a></li><li><a href="/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/" rel="bookmark" title="最短路径树">最短路径树</a></li><li><a href="/2021/08/11/FHQ-Treap%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="bookmark" title="FHQ_Treap学习笔记">FHQ_Treap学习笔记</a></li><li><a href="/2021/08/12/%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86-1/" rel="bookmark" title="树链剖分">树链剖分</a></li>
+        </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -446,13 +452,13 @@ signed main() {
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">2</span>
+        <span class="count">3</span>
         <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">10</span>
+        <span class="count">27</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -516,7 +522,7 @@ signed main() {
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2021/08/05/%E5%B9%B3%E8%A1%A1%E6%A0%91/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+        <a href="/2021/08/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%B0%8F%E7%BB%93/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -540,7 +546,7 @@ signed main() {
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2021/08/05/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93/" title="字符串总结">字符串总结</a></span>
+    <span><a href="/2011/08/09/friends/" title="friends">friends</a></span>
   </li>
 
       
@@ -549,7 +555,57 @@ signed main() {
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2011/08/09/friends/" title="friends">friends</a></span>
+    <span><a href="/2011/08/08/about/" title="About Me">About Me</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%90%AC%E8%AF%BE%E8%AE%B0%E5%BD%95/" title="分类于 听课记录">听课记录</a>
+</div>
+
+    <span><a href="/2021/08/05/%E5%9B%BE%E8%AE%BA%E6%9D%82%E9%A1%B9/" title="图论杂项">图论杂项</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%90%AC%E8%AF%BE%E8%AE%B0%E5%BD%95/" title="分类于 听课记录">听课记录</a>
+</div>
+
+    <span><a href="/2021/08/05/%E6%95%B0%E5%AD%A6%E5%B0%8F%E7%BB%93/" title="数学小结">数学小结</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="分类于 学习笔记">学习笔记</a>
+</div>
+
+    <span><a href="/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/" title="最短路径树">最短路径树</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="分类于 学习笔记">学习笔记</a>
+</div>
+
+    <span><a href="/2021/08/05/%E8%8E%AB%E9%98%9F/" title="莫队">莫队</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%90%AC%E8%AF%BE%E8%AE%B0%E5%BD%95/" title="分类于 听课记录">听课记录</a>
+</div>
+
+    <span><a href="/2021/08/05/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93/" title="字符串总结">字符串总结</a></span>
   </li>
 
       
@@ -566,54 +622,10 @@ signed main() {
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/08/05/%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/" title="斜率优化">斜率优化</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/08/05/%E8%8E%AB%E9%98%9F/" title="莫队">莫队</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/" title="最短路径树">最短路径树</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
+<a href="/categories/%E5%90%AC%E8%AF%BE%E8%AE%B0%E5%BD%95/" title="分类于 听课记录">听课记录</a>
 </div>
 
     <span><a href="/2021/08/05/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/" title="组合计数">组合计数</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/08/05/%E6%95%B0%E5%AD%A6%E5%B0%8F%E7%BB%93/" title="数学小结">数学小结</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2021/08/05/%E5%B9%B3%E8%A1%A1%E6%A0%91/" title="平衡树">平衡树</a></span>
   </li>
 
       

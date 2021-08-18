@@ -17,11 +17,29 @@
         <category>线段树</category>
         <category>组合数学</category>
         <category>链表</category>
+        <category>同余</category>
+        <category>康托展开</category>
+        <category>数论</category>
+        <category>概率期望</category>
+        <category>Trie</category>
+        <category>KMP</category>
+        <category>Manacher</category>
+        <category>AC自动机</category>
+        <category>斜率优化</category>
+        <category>最短路</category>
+        <category>莫队</category>
+        <category>树状数组</category>
+        <category>主席树</category>
+        <category>虚树</category>
+        <category>点分治</category>
+        <category>笛卡尔树</category>
+        <category>启发式合并</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/</guid>
             <title>最短路径树</title>
             <link>https://cgheavenhealer.github.io/2021/08/05/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84%E6%A0%91/</link>
             <category>图论</category>
+            <category>最短路</category>
             <pubDate>Thu, 05 Aug 2021 20:23:29 +0800</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
 &lt;p&gt;最短路径树，顾名思义，就是由最短路的边构成的生成树。&lt;/p&gt;
