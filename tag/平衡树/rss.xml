@@ -34,6 +34,10 @@
         <category>点分治</category>
         <category>笛卡尔树</category>
         <category>启发式合并</category>
+        <category>搜索</category>
+        <category>贪心</category>
+        <category>状态压缩</category>
+        <category>模拟</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/11/FHQ-Treap%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
             <title>FHQ_Treap学习笔记</title>

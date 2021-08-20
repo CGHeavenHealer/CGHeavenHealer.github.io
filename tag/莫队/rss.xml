@@ -34,6 +34,10 @@
         <category>点分治</category>
         <category>笛卡尔树</category>
         <category>启发式合并</category>
+        <category>搜索</category>
+        <category>贪心</category>
+        <category>状态压缩</category>
+        <category>模拟</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%B0%8F%E7%BB%93/</guid>
             <title>数据结构小结</title>
