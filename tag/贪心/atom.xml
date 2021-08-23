@@ -4,37 +4,37 @@
     <title>CG_heavenhealer • Posts by &#34;贪心&#34; tag</title>
     <link href="https://cgheavenhealer.github.io" />
     <updated>2021-08-19T09:37:27.000Z</updated>
-    <category term="图论" />
-    <category term="字符串" />
     <category term="数据结构" />
-    <category term="数学" />
-    <category term="DP" />
-    <category term="平衡树" />
-    <category term="树链剖分" />
     <category term="线段树" />
+    <category term="数学" />
     <category term="组合数学" />
     <category term="链表" />
-    <category term="同余" />
-    <category term="康托展开" />
-    <category term="数论" />
-    <category term="概率期望" />
+    <category term="图论" />
+    <category term="搜索" />
+    <category term="贪心" />
+    <category term="最短路" />
+    <category term="状态压缩" />
+    <category term="DP" />
+    <category term="模拟" />
+    <category term="字符串" />
     <category term="Trie" />
     <category term="KMP" />
     <category term="Manacher" />
     <category term="AC自动机" />
+    <category term="同余" />
+    <category term="康托展开" />
+    <category term="数论" />
+    <category term="概率期望" />
     <category term="斜率优化" />
-    <category term="最短路" />
     <category term="莫队" />
+    <category term="平衡树" />
     <category term="树状数组" />
     <category term="主席树" />
     <category term="虚树" />
     <category term="点分治" />
+    <category term="树链剖分" />
     <category term="笛卡尔树" />
     <category term="启发式合并" />
-    <category term="搜索" />
-    <category term="贪心" />
-    <category term="状态压缩" />
-    <category term="模拟" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/19/2021-8-19-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</id>
         <title>2021.8.19 模拟赛</title>
@@ -51,10 +51,10 @@
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;script data-pjax src=&#34;/lib/hbe.js&#34;&gt;&lt;/script&gt;&lt;link href=&#34;/css/hbe.style.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;</content>
-        <category term="DP" />
-        <category term="最短路" />
         <category term="贪心" />
+        <category term="最短路" />
         <category term="状态压缩" />
+        <category term="DP" />
         <category term="模拟" />
         <updated>2021-08-19T09:37:27.000Z</updated>
     </entry>
@@ -74,8 +74,8 @@
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;script data-pjax src=&#34;/lib/hbe.js&#34;&gt;&lt;/script&gt;&lt;link href=&#34;/css/hbe.style.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;</content>
-        <category term="图论" />
         <category term="组合数学" />
+        <category term="图论" />
         <category term="搜索" />
         <category term="贪心" />
         <updated>2021-08-18T09:37:17.000Z</updated>
