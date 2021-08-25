@@ -38,6 +38,10 @@
         <category>树链剖分</category>
         <category>笛卡尔树</category>
         <category>启发式合并</category>
+        <category>矩阵</category>
+        <category>构造</category>
+        <category>打表</category>
+        <category>栈</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/05/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93/</guid>
             <title>字符串总结</title>
