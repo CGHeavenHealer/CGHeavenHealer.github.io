@@ -19,6 +19,12 @@
         <category>状态压缩</category>
         <category>DP</category>
         <category>模拟</category>
+        <category>矩阵</category>
+        <category>构造</category>
+        <category>打表</category>
+        <category>栈</category>
+        <category>树状数组</category>
+        <category>平衡树</category>
         <category>字符串</category>
         <category>Trie</category>
         <category>KMP</category>
@@ -30,18 +36,12 @@
         <category>概率期望</category>
         <category>斜率优化</category>
         <category>莫队</category>
-        <category>平衡树</category>
-        <category>树状数组</category>
         <category>主席树</category>
         <category>虚树</category>
         <category>点分治</category>
         <category>树链剖分</category>
         <category>笛卡尔树</category>
         <category>启发式合并</category>
-        <category>矩阵</category>
-        <category>构造</category>
-        <category>打表</category>
-        <category>栈</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/25/2021-8-24-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</guid>
             <title>2021 8 24 模拟赛</title>
@@ -78,10 +78,10 @@
             <link>https://cgheavenhealer.github.io/2021/08/25/2021-8-23-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</link>
             <category>线段树</category>
             <category>DP</category>
-            <category>平衡树</category>
-            <category>树状数组</category>
             <category>打表</category>
             <category>栈</category>
+            <category>树状数组</category>
+            <category>平衡树</category>
             <pubDate>Wed, 25 Aug 2021 21:34:59 +0800</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;t1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#t1&#34;&gt;#&lt;/a&gt; T1&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc2p6ZXpvai5jb20vY29udGVzdC8xMjYvcHJvYmxlbS8xMg==&#34;&gt;分配&lt;/span&gt;&lt;/p&gt;
