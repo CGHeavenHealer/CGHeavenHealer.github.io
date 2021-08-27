@@ -5,8 +5,8 @@
         <link>https://cgheavenhealer.github.io</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Wed, 25 Aug 2021 21:35:06 +0800</pubDate>
-        <lastBuildDate>Wed, 25 Aug 2021 21:35:06 +0800</lastBuildDate>
+        <pubDate>Fri, 27 Aug 2021 17:06:44 +0800</pubDate>
+        <lastBuildDate>Fri, 27 Aug 2021 17:06:44 +0800</lastBuildDate>
         <category>数据结构</category>
         <category>线段树</category>
         <category>数学</category>
@@ -42,6 +42,13 @@
         <category>树链剖分</category>
         <category>笛卡尔树</category>
         <category>启发式合并</category>
+        <item>
+            <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/27/test/</guid>
+            <title>test</title>
+            <link>https://cgheavenhealer.github.io/2021/08/27/test/</link>
+            <pubDate>Fri, 27 Aug 2021 17:06:44 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/25/2021-8-24-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</guid>
             <title>2021 8 24 模拟赛</title>

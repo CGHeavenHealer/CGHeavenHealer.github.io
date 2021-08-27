@@ -3,7 +3,7 @@
     <id>https://cgheavenhealer.github.io</id>
     <title>CG_heavenhealer</title>
     <link href="https://cgheavenhealer.github.io" />
-    <updated>2021-08-25T13:35:06.000Z</updated>
+    <updated>2021-08-27T09:06:44.000Z</updated>
     <category term="数据结构" />
     <category term="线段树" />
     <category term="数学" />
@@ -39,6 +39,13 @@
     <category term="树链剖分" />
     <category term="笛卡尔树" />
     <category term="启发式合并" />
+    <entry>
+        <id>https://cgheavenhealer.github.io/2021/08/27/test/</id>
+        <title>test</title>
+        <link rel="alternate" href="https://cgheavenhealer.github.io/2021/08/27/test/"/>
+        <content type="html"></content>
+        <updated>2021-08-27T09:06:44.000Z</updated>
+    </entry>
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/25/2021-8-24-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</id>
         <title>2021 8 24 模拟赛</title>
