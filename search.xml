@@ -1422,11 +1422,6 @@ M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">�
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2021/08/27/test/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>2021.8.25 模拟赛</title>
     <url>/2021/08/30/2021-8-25-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</url>
     <content><![CDATA[<h3 id="t1"><a class="markdownIt-Anchor" href="#t1">#</a> T1</h3>
@@ -1485,6 +1480,9 @@ t=\dfrac{n\times(2k-2)}{2k-1}
 <h3 id="t4"><a class="markdownIt-Anchor" href="#t4">#</a> T4</h3>
 <p><s>不会写，咕了</s></p>
 ]]></content>
+      <categories>
+        <category>模拟赛</category>
+      </categories>
       <tags>
         <tag>图论</tag>
         <tag>DP</tag>
