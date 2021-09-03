@@ -47,6 +47,10 @@
     <category term="单调队列" />
     <category term="仙人掌图" />
     <category term="tarjan" />
+    <category term="差分" />
+    <category term="并查集" />
+    <category term="BFS" />
+    <category term="DFS" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/05/%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/</id>
         <title>斜率优化</title>

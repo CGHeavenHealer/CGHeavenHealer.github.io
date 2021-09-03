@@ -47,6 +47,10 @@
     <category term="单调队列" />
     <category term="仙人掌图" />
     <category term="tarjan" />
+    <category term="差分" />
+    <category term="并查集" />
+    <category term="BFS" />
+    <category term="DFS" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/05/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93/</id>
         <title>字符串总结</title>

@@ -47,6 +47,10 @@
     <category term="单调队列" />
     <category term="仙人掌图" />
     <category term="tarjan" />
+    <category term="差分" />
+    <category term="并查集" />
+    <category term="BFS" />
+    <category term="DFS" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/09/02/%E4%BB%99%E4%BA%BA%E6%8E%8C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
         <title>仙人掌学习笔记</title>
