@@ -54,6 +54,9 @@
         <category>并查集</category>
         <category>BFS</category>
         <category>DFS</category>
+        <category>Hash</category>
+        <category>单调栈</category>
+        <category>前缀和</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/19/2021-8-19-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</guid>
             <title>2021.8.19 模拟赛</title>

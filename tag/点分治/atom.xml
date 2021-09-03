@@ -51,6 +51,9 @@
     <category term="并查集" />
     <category term="BFS" />
     <category term="DFS" />
+    <category term="Hash" />
+    <category term="单调栈" />
+    <category term="前缀和" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%B0%8F%E7%BB%93/</id>
         <title>数据结构小结</title>

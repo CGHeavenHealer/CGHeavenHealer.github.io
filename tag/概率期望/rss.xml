@@ -54,6 +54,9 @@
         <category>并查集</category>
         <category>BFS</category>
         <category>DFS</category>
+        <category>Hash</category>
+        <category>单调栈</category>
+        <category>前缀和</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/05/%E6%95%B0%E5%AD%A6%E5%B0%8F%E7%BB%93/</guid>
             <title>数学小结</title>
