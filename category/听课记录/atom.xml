@@ -54,6 +54,11 @@
     <category term="Hash" />
     <category term="单调栈" />
     <category term="前缀和" />
+    <category term="拆点" />
+    <category term="暴力枚举" />
+    <category term="双指针" />
+    <category term="拓扑排序" />
+    <category term="区间DP" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/05/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/</id>
         <title>组合计数</title>

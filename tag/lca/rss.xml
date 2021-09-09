@@ -57,6 +57,11 @@
         <category>Hash</category>
         <category>单调栈</category>
         <category>前缀和</category>
+        <category>拆点</category>
+        <category>暴力枚举</category>
+        <category>双指针</category>
+        <category>拓扑排序</category>
+        <category>区间DP</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/09/02/%E4%BB%99%E4%BA%BA%E6%8E%8C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
             <title>仙人掌学习笔记</title>

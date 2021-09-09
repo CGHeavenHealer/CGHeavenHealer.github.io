@@ -54,12 +54,16 @@
     <category term="Hash" />
     <category term="单调栈" />
     <category term="前缀和" />
+    <category term="拆点" />
+    <category term="暴力枚举" />
+    <category term="双指针" />
+    <category term="拓扑排序" />
+    <category term="区间DP" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/17/2021-8-17-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</id>
         <title>2021.8.17 模拟赛</title>
         <link rel="alternate" href="https://cgheavenhealer.github.io/2021/08/17/2021-8-17-%E6%A8%A1%E6%8B%9F%E8%B5%9B/"/>
-        <content type="html">&lt;h1 id=&#34;20210817&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#20210817&#34;&gt;#&lt;/a&gt; 2021.08.17&lt;/h1&gt;
-&lt;p&gt;&lt;s&gt;长者生日场&lt;/s&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;s&gt;长者生日场&lt;/s&gt;&lt;/p&gt;
 &lt;h3 id=&#34;t1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#t1&#34;&gt;#&lt;/a&gt; T1&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3NqemV6b2ouY29tOjkyODAvY29udGVzdC8xMTUvcHJvYmxlbS8y&#34;&gt;整数数列的解码&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;如果直接找出序列中的 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;-1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.72777em;vertical-align:-0.08333em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 的个数然后暴力还原的话，复杂度是 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;Θ&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\Theta(n)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;Θ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 的。&lt;/p&gt;

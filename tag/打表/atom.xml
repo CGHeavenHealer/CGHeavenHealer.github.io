@@ -54,6 +54,11 @@
     <category term="Hash" />
     <category term="单调栈" />
     <category term="前缀和" />
+    <category term="拆点" />
+    <category term="暴力枚举" />
+    <category term="双指针" />
+    <category term="拓扑排序" />
+    <category term="区间DP" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/25/2021-8-23-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</id>
         <title>2021.8.23 模拟赛</title>

@@ -54,6 +54,11 @@
     <category term="Hash" />
     <category term="单调栈" />
     <category term="前缀和" />
+    <category term="拆点" />
+    <category term="暴力枚举" />
+    <category term="双指针" />
+    <category term="拓扑排序" />
+    <category term="区间DP" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/05/%E6%95%B0%E5%AD%A6%E5%B0%8F%E7%BB%93/</id>
         <title>数学小结</title>

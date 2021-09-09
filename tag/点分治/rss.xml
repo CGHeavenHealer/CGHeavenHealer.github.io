@@ -57,6 +57,11 @@
         <category>Hash</category>
         <category>单调栈</category>
         <category>前缀和</category>
+        <category>拆点</category>
+        <category>暴力枚举</category>
+        <category>双指针</category>
+        <category>拓扑排序</category>
+        <category>区间DP</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/05/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%B0%8F%E7%BB%93/</guid>
             <title>数据结构小结</title>
