@@ -59,6 +59,7 @@
     <category term="双指针" />
     <category term="拓扑排序" />
     <category term="区间DP" />
+    <category term="容斥" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/09/02/%E4%BB%99%E4%BA%BA%E6%8E%8C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
         <title>仙人掌学习笔记</title>
@@ -105,7 +106,7 @@
     </entry>
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/30/2021-8-26-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</id>
-        <title>2021 8 26模拟赛</title>
+        <title>2021.8.26 模拟赛</title>
         <link rel="alternate" href="https://cgheavenhealer.github.io/2021/08/30/2021-8-26-%E6%A8%A1%E6%8B%9F%E8%B5%9B/"/>
         <content type="html">&lt;h3 id=&#34;t1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#t1&#34;&gt;#&lt;/a&gt; T1&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc2p6ZXpvai5jb20vY29udGVzdC8xMzMvcHJvYmxlbS83ODQ=&#34;&gt;0826 农夫约的假期 (shuru)&lt;/span&gt;&lt;/p&gt;
