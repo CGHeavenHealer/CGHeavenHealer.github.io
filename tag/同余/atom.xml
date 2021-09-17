@@ -60,6 +60,9 @@
     <category term="拓扑排序" />
     <category term="区间DP" />
     <category term="容斥" />
+    <category term="最小生成树" />
+    <category term="ST表" />
+    <category term="桶" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/08/05/%E6%95%B0%E5%AD%A6%E5%B0%8F%E7%BB%93/</id>
         <title>数学小结</title>

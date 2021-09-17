@@ -63,6 +63,9 @@
         <category>拓扑排序</category>
         <category>区间DP</category>
         <category>容斥</category>
+        <category>最小生成树</category>
+        <category>ST表</category>
+        <category>桶</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/08/05/%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0/</guid>
             <title>组合计数</title>

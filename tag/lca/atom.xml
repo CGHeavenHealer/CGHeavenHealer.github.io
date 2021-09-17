@@ -60,6 +60,9 @@
     <category term="拓扑排序" />
     <category term="区间DP" />
     <category term="容斥" />
+    <category term="最小生成树" />
+    <category term="ST表" />
+    <category term="桶" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/09/02/%E4%BB%99%E4%BA%BA%E6%8E%8C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
         <title>仙人掌学习笔记</title>
