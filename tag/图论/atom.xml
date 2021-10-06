@@ -65,6 +65,10 @@
     <category term="桶" />
     <category term="DFS序" />
     <category term="折半搜索" />
+    <category term="分治" />
+    <category term="CDQ" />
+    <category term="背包" />
+    <category term="欧拉函数" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/09/26/2021-9-24-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</id>
         <title>2021.9.24 模拟赛</title>

@@ -65,6 +65,10 @@
     <category term="桶" />
     <category term="DFS序" />
     <category term="折半搜索" />
+    <category term="分治" />
+    <category term="CDQ" />
+    <category term="背包" />
+    <category term="欧拉函数" />
     <entry>
         <id>https://cgheavenhealer.github.io/2021/09/20/%E4%B8%BB%E5%B8%AD%E6%A0%91%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/</id>
         <title>主席树做题记录</title>
