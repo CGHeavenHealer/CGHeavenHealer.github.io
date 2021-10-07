@@ -72,6 +72,7 @@
         <category>CDQ</category>
         <category>背包</category>
         <category>欧拉函数</category>
+        <category>数位DP</category>
         <item>
             <guid isPermalink="true">https://cgheavenhealer.github.io/2021/10/06/2021-9-29-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</guid>
             <title>2021.9.29 模拟赛</title>
@@ -84,7 +85,7 @@
             <category>树链剖分</category>
             <category>欧拉函数</category>
             <pubDate>Wed, 06 Oct 2021 06:38:34 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;T1&lt;/p&gt;
+            <description><![CDATA[ &lt;h3 id=&#34;t1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#t1&#34;&gt;#&lt;/a&gt; T1&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc2p6ZXpvai5jb20vY29udGVzdC8xNTcvcHJvYmxlbS8xMDM1&#34;&gt;【长郡 - NOIP2017 模拟 Day2-T3】天哥种树&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;树剖 / 倍增加许多麻烦的分类讨论。&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;不会做，先咕了&lt;/s&gt;&lt;/p&gt;
@@ -129,7 +130,7 @@
             <category>CDQ</category>
             <category>背包</category>
             <pubDate>Wed, 06 Oct 2021 06:38:03 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;T1&lt;/p&gt;
+            <description><![CDATA[ &lt;h3 id=&#34;t1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#t1&#34;&gt;#&lt;/a&gt; T1&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc2p6ZXpvai5jb20vY29udGVzdC8xNTQvcHJvYmxlbS8xMDA3&#34;&gt;「POI2012」极简主义的安保 Minimalist Security&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;还不会，先咕了&lt;/s&gt;&lt;/p&gt;
 &lt;hr&gt;
