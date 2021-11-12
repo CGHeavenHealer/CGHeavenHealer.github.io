@@ -106,7 +106,7 @@
 &lt;h3 id=&#34;t6&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#t6&#34;&gt;#&lt;/a&gt; T6&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc2p6ZXpvai5jb20vY29udGVzdC8xNDAvcHJvYmxlbS84NjU=&#34;&gt;【2018.10 雅礼集训 day7】Reverse&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;最简单的思路：每个点像能到达的点连边，跑最短路；&lt;/p&gt;
-&lt;p&gt;可以有两种思路优化：线段树优化建图、 &lt;code&gt;std::set1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;可以有两种思路优化：线段树优化建图、 &lt;code&gt;std::set&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;这里给出第二种的讲解。&lt;/p&gt;
 &lt;p&gt;可以发现，一个点能到达奇点还是偶点是固定的。&lt;/p&gt;
 &lt;p&gt;所以可以用两个  &lt;code&gt;set&lt;/code&gt;  维护奇点和偶点，之后跑 BFS，每转移到一个点就从  &lt;code&gt;set&lt;/code&gt;  中删掉他，复杂度是有保证的。&lt;/p&gt;
